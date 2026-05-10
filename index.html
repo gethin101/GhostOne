@@ -90,12 +90,14 @@
         opacity: 0.8;
     }
 
+    /* BIGGER RENDER IMAGE */
     .hero-img {
-        width: 300px;
+        width: 420px;
         height: auto;
         border-radius: var(--radius);
         margin: 40px auto;
         display: block;
+        border: 2px solid #222;
     }
 
     section {
@@ -124,14 +126,20 @@
         border: 1px solid #222;
     }
 
-    /* TEAM SECTION */
+    /* TEAM SECTION — NEW PROFESSIONAL STYLE */
+    .team-card {
+        text-align: center;
+        padding: 25px;
+    }
+
     .pfp-box {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
         border-radius: var(--radius);
         overflow: hidden;
-        margin: 10px auto 15px;
-        border: 2px solid #222;
+        margin: 15px auto 20px;
+        border: 2px solid #333;
+        box-shadow: 0 0 12px rgba(0,0,0,0.4);
     }
 
     .pfp-box img {
@@ -140,12 +148,20 @@
         object-fit: cover;
     }
 
+    .role {
+        font-size: 0.95rem;
+        opacity: 0.7;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+
     .github-link {
         display: inline-block;
         margin-top: 10px;
         color: var(--accent);
         text-decoration: none;
         font-weight: bold;
+        font-size: 1rem;
     }
 
     .github-link:hover {
@@ -197,16 +213,18 @@
     <h2>Team</h2>
     <div class="grid">
 
-        <div class="card">
+        <div class="card team-card">
             <h3>Gethin</h3>
+            <p class="role">Hardware & Firmware Lead</p>
             <div class="pfp-box">
                 <img src="assets/gethin_pfp.png" alt="Gethin PFP">
             </div>
             <a class="github-link" href="https://github.com/gethin101" target="_blank">GitHub →</a>
         </div>
 
-        <div class="card">
+        <div class="card team-card">
             <h3>Evan</h3>
+            <p class="role">Electronics & Prototyping</p>
             <div class="pfp-box">
                 <img src="assets/evan_pfp.png" alt="Evan PFP">
             </div>
