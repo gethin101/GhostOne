@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Project Gethin</title>
+<title>Project Gethin – Files</title>
 
 <style>
     :root {
@@ -24,7 +24,6 @@
         line-height: 1.6;
     }
 
-    /* NAV BAR */
     nav {
         width: 100%;
         background: #111;
@@ -50,60 +49,47 @@
         opacity: 1;
     }
 
-    header {
-        text-align: center;
-        padding: 80px 20px 60px;
-        max-width: 900px;
-        margin: auto;
-    }
-
-    header h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-
-    header p {
-        font-size: 1.2rem;
-        opacity: 0.8;
-    }
-
-    .hero-img {
-        width: 260px;
-        height: 160px;
-        background: var(--card);
-        border-radius: var(--radius);
-        margin: 40px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.9rem;
-        opacity: 0.7;
-    }
-
     section {
         max-width: 900px;
         margin: 60px auto;
         padding: 0 20px;
     }
 
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: var(--accent);
+    h1 {
         text-align: center;
+        font-size: 2.5rem;
+        color: var(--accent);
     }
 
-    .grid {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .card {
+    details {
         background: var(--card);
-        padding: 20px;
         border-radius: var(--radius);
         border: 1px solid #222;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+
+    summary {
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--accent);
+        outline: none;
+    }
+
+    .download-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 18px;
+        background: var(--accent);
+        color: #000;
+        border-radius: var(--radius);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .download-btn:hover {
+        opacity: 0.8;
     }
 
     footer {
@@ -125,42 +111,33 @@
     </div>
 </nav>
 
-<header>
-    <h1>Project Gethin</h1>
-    <p>A custom Flipper‑inspired multi‑tool device — built from scratch.</p>
-    <div class="hero-img">Device Render Placeholder</div>
-</header>
-
 <section>
-    <h2>Features</h2>
-    <div class="grid">
-        <div class="card"><h3>Modular Hardware</h3><p>Swappable modules for RF, IR, GPIO, sensors, and more.</p></div>
-        <div class="card"><h3>Custom Firmware</h3><p>Fully open firmware designed for experimentation and learning.</p></div>
-        <div class="card"><h3>Compact Design</h3><p>Pocket‑sized, rugged, and built for everyday carry.</p></div>
-        <div class="card"><h3>Expandable</h3><p>Supports add‑ons, accessories, and future hardware revisions.</p></div>
-        <div class="card"><h3>Secure Boot</h3><p>Optional secure bootloader for safe firmware testing.</p></div>
-        <div class="card"><h3>Custom UI</h3><p>Simple, clean interface designed for fast navigation.</p></div>
-    </div>
-</section>
+    <h1>Files & Downloads</h1>
 
-<section>
-    <h2>Roadmap</h2>
-    <div class="card">
-        <p>✔ Concept sketches</p>
-        <p>✔ Hardware research</p>
-        <p>⧗ PCB layout (in progress)</p>
-        <p>⧗ Firmware base</p>
-        <p>⧗ Prototype v1</p>
-        <p>⧗ Public release</p>
-    </div>
-</section>
+    <details>
+        <summary>Firmware</summary>
+        <p>No firmware yet — coming soon.</p>
+        <a class="download-btn" href="#">Download (coming soon)</a>
+    </details>
 
-<section>
-    <h2>Team</h2>
-    <div class="grid">
-        <div class="card"><h3>Gethin</h3><p>Hardware design, firmware ideas, project direction.</p></div>
-        <div class="card"><h3>Your Friend</h3><p>Electronics, prototyping, testing, and co‑development.</p></div>
-    </div>
+    <details>
+        <summary>Source Code</summary>
+        <p>Code will appear here once development begins.</p>
+        <a class="download-btn" href="#">Download (coming soon)</a>
+    </details>
+
+    <details>
+        <summary>Schematics</summary>
+        <p>PCB diagrams and hardware files will be added later.</p>
+        <a class="download-btn" href="#">Download (coming soon)</a>
+    </details>
+
+    <details>
+        <summary>3D Models</summary>
+        <p>Case designs and STL files will be uploaded here.</p>
+        <a class="download-btn" href="#">Download (coming soon)</a>
+    </details>
+
 </section>
 
 <footer>
