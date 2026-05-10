@@ -17,6 +17,7 @@
 
     body {
         margin: 0;
+        overflow-x: hidden;
         font-family: var(--font);
         background: var(--bg);
         color: var(--fg);
@@ -27,9 +28,9 @@
     nav {
         width: 100%;
         background: #111;
-        padding: 15px 25px;
+        padding: 15px 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         position: sticky;
         top: 0;
@@ -37,14 +38,8 @@
         border-bottom: 1px solid #222;
     }
 
-    nav .logo {
-        font-size: 1.3rem;
-        font-weight: bold;
-        color: var(--accent);
-    }
-
     nav .links a {
-        margin-left: 20px;
+        margin: 0 20px;
         color: var(--fg);
         text-decoration: none;
         font-size: 1rem;
@@ -58,6 +53,8 @@
     header {
         text-align: center;
         padding: 80px 20px 60px;
+        max-width: 900px;
+        margin: auto;
     }
 
     header h1 {
@@ -121,7 +118,6 @@
 <body>
 
 <nav>
-    <div class="logo">Project Gethin</div>
     <div class="links">
         <a href="index.html">Home</a>
         <a href="files.html">Files</a>
