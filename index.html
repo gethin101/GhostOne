@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gethin Device Project</title>
+<title>Project Gethin</title>
+
 <style>
     :root {
         --bg: #0d0d0d;
@@ -20,6 +21,38 @@
         background: var(--bg);
         color: var(--fg);
         line-height: 1.6;
+    }
+
+    /* NAV BAR */
+    nav {
+        width: 100%;
+        background: #111;
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #222;
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--accent);
+    }
+
+    nav .links a {
+        margin-left: 20px;
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    nav .links a:hover {
+        opacity: 1;
     }
 
     header {
@@ -60,6 +93,7 @@
         font-size: 2rem;
         margin-bottom: 20px;
         color: var(--accent);
+        text-align: center;
     }
 
     .grid {
@@ -86,6 +120,15 @@
 
 <body>
 
+<nav>
+    <div class="logo">Project Gethin</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="files.html">Files</a>
+        <a href="https://github.com/gethin101/gethin.app" target="_blank">GitHub</a>
+    </div>
+</nav>
+
 <header>
     <h1>Project Gethin</h1>
     <p>A custom Flipper‑inspired multi‑tool device — built from scratch.</p>
@@ -95,22 +138,12 @@
 <section>
     <h2>Features</h2>
     <div class="grid">
-        <div class="card">
-            <h3>Modular Hardware</h3>
-            <p>Swappable modules for RF, IR, GPIO, sensors, and more.</p>
-        </div>
-        <div class="card">
-            <h3>Custom Firmware</h3>
-            <p>Fully open firmware designed for experimentation and learning.</p>
-        </div>
-        <div class="card">
-            <h3>Compact Design</h3>
-            <p>Pocket‑sized, rugged, and built for everyday carry.</p>
-        </div>
-        <div class="card">
-            <h3>Expandable</h3>
-            <p>Supports add‑ons, accessories, and future hardware revisions.</p>
-        </div>
+        <div class="card"><h3>Modular Hardware</h3><p>Swappable modules for RF, IR, GPIO, sensors, and more.</p></div>
+        <div class="card"><h3>Custom Firmware</h3><p>Fully open firmware designed for experimentation and learning.</p></div>
+        <div class="card"><h3>Compact Design</h3><p>Pocket‑sized, rugged, and built for everyday carry.</p></div>
+        <div class="card"><h3>Expandable</h3><p>Supports add‑ons, accessories, and future hardware revisions.</p></div>
+        <div class="card"><h3>Secure Boot</h3><p>Optional secure bootloader for safe firmware testing.</p></div>
+        <div class="card"><h3>Custom UI</h3><p>Simple, clean interface designed for fast navigation.</p></div>
     </div>
 </section>
 
@@ -129,14 +162,8 @@
 <section>
     <h2>Team</h2>
     <div class="grid">
-        <div class="card">
-            <h3>Gethin</h3>
-            <p>Hardware design, firmware ideas, project direction.</p>
-        </div>
-        <div class="card">
-            <h3>Your Friend</h3>
-            <p>Electronics, prototyping, testing, and co‑development.</p>
-        </div>
+        <div class="card"><h3>Gethin</h3><p>Hardware design, firmware ideas, project direction.</p></div>
+        <div class="card"><h3>Your Friend</h3><p>Electronics, prototyping, testing, and co‑development.</p></div>
     </div>
 </section>
 
