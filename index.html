@@ -1,1 +1,148 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gethin Device Project</title>
+<style>
+    :root {
+        --bg: #0d0d0d;
+        --fg: #ffffff;
+        --accent: #00e0ff;
+        --card: #1a1a1a;
+        --radius: 14px;
+        --font: "Inter", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+    }
+
+    header {
+        text-align: center;
+        padding: 80px 20px 60px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    .hero-img {
+        width: 260px;
+        height: 160px;
+        background: var(--card);
+        border-radius: var(--radius);
+        margin: 40px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--accent);
+    }
+
+    .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+        background: var(--card);
+        padding: 20px;
+        border-radius: var(--radius);
+        border: 1px solid #222;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Project Gethin</h1>
+    <p>A custom Flipper‑inspired multi‑tool device — built from scratch.</p>
+    <div class="hero-img">Device Render Placeholder</div>
+</header>
+
+<section>
+    <h2>Features</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Modular Hardware</h3>
+            <p>Swappable modules for RF, IR, GPIO, sensors, and more.</p>
+        </div>
+        <div class="card">
+            <h3>Custom Firmware</h3>
+            <p>Fully open firmware designed for experimentation and learning.</p>
+        </div>
+        <div class="card">
+            <h3>Compact Design</h3>
+            <p>Pocket‑sized, rugged, and built for everyday carry.</p>
+        </div>
+        <div class="card">
+            <h3>Expandable</h3>
+            <p>Supports add‑ons, accessories, and future hardware revisions.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Roadmap</h2>
+    <div class="card">
+        <p>✔ Concept sketches</p>
+        <p>✔ Hardware research</p>
+        <p>⧗ PCB layout (in progress)</p>
+        <p>⧗ Firmware base</p>
+        <p>⧗ Prototype v1</p>
+        <p>⧗ Public release</p>
+    </div>
+</section>
+
+<section>
+    <h2>Team</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Gethin</h3>
+            <p>Hardware design, firmware ideas, project direction.</p>
+        </div>
+        <div class="card">
+            <h3>Your Friend</h3>
+            <p>Electronics, prototyping, testing, and co‑development.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Project Gethin — All rights reserved.
+</footer>
+
+</body>
+</html>
