@@ -91,16 +91,11 @@
     }
 
     .hero-img {
-        width: 260px;
-        height: 160px;
-        background: var(--card);
+        width: 300px;
+        height: auto;
         border-radius: var(--radius);
         margin: 40px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.9rem;
-        opacity: 0.7;
+        display: block;
     }
 
     section {
@@ -129,6 +124,34 @@
         border: 1px solid #222;
     }
 
+    /* TEAM SECTION */
+    .pfp-box {
+        width: 120px;
+        height: 120px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        margin: 10px auto 15px;
+        border: 2px solid #222;
+    }
+
+    .pfp-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .github-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .github-link:hover {
+        opacity: 0.8;
+    }
+
     footer {
         text-align: center;
         padding: 40px;
@@ -155,7 +178,7 @@
 <header>
     <h1>Project Gethin</h1>
     <p>A custom Flipper‑inspired multi‑tool device — built from scratch.</p>
-    <div class="hero-img">Device Render Placeholder</div>
+    <img class="hero-img" src="assets/render_1.png" alt="Device Render">
 </header>
 
 <section>
@@ -171,22 +194,25 @@
 </section>
 
 <section>
-    <h2>Roadmap</h2>
-    <div class="card">
-        <p>✔ Concept sketches</p>
-        <p>✔ Hardware research</p>
-        <p>⧗ PCB layout (in progress)</p>
-        <p>⧗ Firmware base</p>
-        <p>⧗ Prototype v1</p>
-        <p>⧗ Public release</p>
-    </div>
-</section>
-
-<section>
     <h2>Team</h2>
     <div class="grid">
-        <div class="card"><h3>Gethin</h3><p>Hardware design, firmware ideas, project direction.</p></div>
-        <div class="card"><h3>Your Friend</h3><p>Electronics, prototyping, testing, and co‑development.</p></div>
+
+        <div class="card">
+            <h3>Gethin</h3>
+            <div class="pfp-box">
+                <img src="assets/gethin_pfp.png" alt="Gethin PFP">
+            </div>
+            <a class="github-link" href="https://github.com/gethin101" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="card">
+            <h3>Evan</h3>
+            <div class="pfp-box">
+                <img src="assets/evan_pfp.png" alt="Evan PFP">
+            </div>
+            <a class="github-link" href="https://github.com/Evan-121" target="_blank">GitHub →</a>
+        </div>
+
     </div>
 </section>
 
