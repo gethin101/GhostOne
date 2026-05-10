@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Gethin – Files</title>
+
+<style>
+    :root {
+        --bg: #0d0d0d;
+        --fg: #ffffff;
+        --accent: #00e0ff;
+        --card: #1a1a1a;
+        --radius: 14px;
+        --font: "Inter", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+    }
+
+    nav {
+        width: 100%;
+        background: #111;
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #222;
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--accent);
+    }
+
+    nav .links a {
+        margin-left: 20px;
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    nav .links a:hover {
+        opacity: 1;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--accent);
+    }
+
+    .card {
+        background: var(--card);
+        padding: 20px;
+        border-radius: var(--radius);
+        border: 1px solid #222;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Project Gethin</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="files.html">Files</a>
+        <a href="https://github.com/gethin101/gethin.app" target="_blank">GitHub</a>
+    </div>
+</nav>
+
+<section>
+    <h1>Files & Downloads</h1>
+
+    <div class="card">
+        <h2>Firmware</h2>
+        <p>No firmware yet — coming soon.</p>
+    </div>
+
+    <div class="card">
+        <h2>Code</h2>
+        <p>Source code will appear here once development begins.</p>
+    </div>
+
+    <div class="card">
+        <h2>Schematics</h2>
+        <p>PCB diagrams and hardware files will be added later.</p>
+    </div>
+
+    <div class="card">
+        <h2>3D Models</h2>
+        <p>Case designs and STL files will be uploaded here.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Project Gethin — All rights reserved.
+</footer>
+
+</body>
+</html>
