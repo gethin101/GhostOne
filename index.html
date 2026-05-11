@@ -132,7 +132,12 @@
         border: 1px solid #222;
     }
 
-    /* Subtle premium tech-spec styling */
+    /* ⭐ Subtle glow ONLY for Feature cards */
+    .card.feature {
+        box-shadow: 0 0 12px rgba(0, 224, 255, 0.08);
+    }
+
+    /* ⭐ Premium Tech Spec styling */
     .card.spec {
         border-top: 3px solid var(--accent);
         padding-top: 18px;
@@ -227,12 +232,12 @@
 <section>
     <h2>Features</h2>
     <div class="grid">
-        <div class="card"><h3>Sensor Integration</h3><p>Built-in modules for RF, IR, RFID & NFC capturing and emulating</p></div>
-        <div class="card"><h3>Open-source Code</h3><p>Customisable and easy to use firmware in a single file</p></div>
-        <div class="card"><h3>Compact Design</h3><p>Multi-layered PCBs & 3D printed case make it pocket-sized and compact</p></div>
-        <div class="card"><h3>HID Payloads</h3><p>Can emulate rubber ducky payloads and HID scripts on devices via bluetooth</p></div>
-        <div class="card"><h3>Encrypted storage</h3><p>Supports micro SD cards to store signal data & for firmware updates</p></div>
-        <div class="card"><h3>Custom UI</h3><p>Simple, clean interface on an OLED display for easy navigation</p></div>
+        <div class="card feature"><h3>Sensor Integration</h3><p>Built-in modules for RF, IR, RFID & NFC capturing and emulating</p></div>
+        <div class="card feature"><h3>Open-source Code</h3><p>Customisable and easy to use firmware in a single file</p></div>
+        <div class="card feature"><h3>Compact Design</h3><p>Multi-layered PCBs & 3D printed case make it pocket-sized and compact</p></div>
+        <div class="card feature"><h3>HID Payloads</h3><p>Can emulate rubber ducky payloads and HID scripts on devices via bluetooth</p></div>
+        <div class="card feature"><h3>Encrypted storage</h3><p>Supports micro SD cards to store signal data & for firmware updates</p></div>
+        <div class="card feature"><h3>Custom UI</h3><p>Simple, clean interface on an OLED display for easy navigation</p></div>
     </div>
 </section>
 
