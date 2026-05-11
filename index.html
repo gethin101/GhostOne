@@ -130,6 +130,7 @@
         padding: 20px;
         border-radius: var(--radius);
         border: 1px solid #222;
+        transition: all 0.2s 
     }
 
 .card.feature {
@@ -206,6 +207,16 @@
         opacity: 0.6;
         font-size: 0.9rem;
     }
+
+    /* Subtle hover pop for feature + tech spec cards */
+.card.feature:hover,
+.card.spec:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 26px rgba(0, 224, 255, 0.18);
+    transition: all 0.2s ease;
+}
+
+    
 </style>
 </head>
 
