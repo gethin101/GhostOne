@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Journal — Flipper One</title>
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<style>
+    :root {
+        --bg: #0d0d0d;
+        --fg: #ffffff;
+        --accent: #00e0ff;
+        --card: #1a1a1a;
+        --radius: 14px;
+        --font: "Inter", sans-serif;
+    }
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+    }
+
+    /* NAV BAR */
+    nav {
+        width: 100%;
+        background: #111;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #222;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .nav-inner {
+        width: 100%;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        padding: 0 20px;
+        justify-content: center;
+        transform: translateX(60px);
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--accent);
+        justify-self: start;
+        margin-left: 185px;
+        text-decoration: none;
+    }
+
+    nav .links {
+        display: flex;
+        gap: 25px;
+        justify-self: center;
+    }
+
+    nav .links a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    nav .links a:hover {
+        opacity: 1;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        color: var(--accent);
+    }
+
+    .journal-entry {
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid #222;
+        padding: 25px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 18px rgba(0, 224, 255, 0.10);
+        transition: all 0.2s ease;
+    }
+
+    .journal-entry:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 26px rgba(0, 224, 255, 0.18);
+    }
+
+    .journal-date {
+        font-size: 0.95rem;
+        opacity: 0.7;
+        margin-bottom: 6px;
+    }
+
+    .journal-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+        color: var(--accent);
+    }
+
+    .journal-body {
+        font-size: 1rem;
+        opacity: 0.9;
+        margin-bottom: 20px;
+        line-height: 1.55;
+    }
+
+    .journal-images {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .journal-images img {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: var(--radius);
+        border: 1px solid #333;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Flipper One</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="files.html">Files</a>
+            <a href="journal.html">Journal</a>
+            <a href="https://github.com/gethin101/gethin.app" target="_blank">GitHub</a>
+        </div>
+        <div></div>
+    </div>
+</nav>
+
+<section>
+    <h1>Project Journal</h1>
+
+    <!-- ⭐ TEMPLATE 1 -->
+    <div class="journal-entry">
+        <div class="journal-date">Date: DD/MM/YYYY</div>
+        <div class="journal-title">Entry Title Here</div>
+        <div class="journal-body">
+            Write what you did today…  
+            Progress, issues, ideas, breakthroughs — anything.
+        </div>
+        <div class="journal-images">
+            <!-- Add images like this -->
+            <!-- <img src="assets/example1.png"> -->
+        </div>
+    </div>
+
+    <!-- ⭐ TEMPLATE 2 -->
+    <div class="journal-entry">
+        <div class="journal-date">Date: DD/MM/YYYY</div>
+        <div class="journal-title">Entry Title Here</div>
+        <div class="journal-body">
+            Write what you did today…  
+            You can add multiple paragraphs if needed.
+        </div>
+        <div class="journal-images">
+            <!-- <img src="assets/example2.png"> -->
+            <!-- <img src="assets/example3.png"> -->
+        </div>
+    </div>
+
+    <!-- ⭐ TEMPLATE 3 -->
+    <div class="journal-entry">
+        <div class="journal-date">Date: DD/MM/YYYY</div>
+        <div class="journal-title">Entry Title Here</div>
+        <div class="journal-body">
+            Write what you did today…  
+            Add images below if you want.
+        </div>
+        <div class="journal-images">
+            <!-- <img src="assets/example4.png"> -->
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Flipper One — All rights reserved.
+</footer>
+
+</body>
+</html>
