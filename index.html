@@ -130,15 +130,22 @@
         padding: 20px;
         border-radius: var(--radius);
         border: 1px solid #222;
-        transition: all 0.2s 
+        transition: all 0.2s ease;
     }
 
-.card.feature {
-    box-shadow: 0 4px 22px rgba(0, 224, 255, 0.12);
-}
+    /* Feature card glow */
+    .card.feature {
+        box-shadow: 0 0 18px rgba(0, 224, 255, 0.14);
+    }
 
+    /* Hover pop for feature + spec cards */
+    .card.feature:hover,
+    .card.spec:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 26px rgba(0, 224, 255, 0.18);
+    }
 
-    /* ⭐ Premium Tech Spec styling */
+    /* Premium Tech Spec styling */
     .card.spec {
         border-top: 3px solid var(--accent);
         padding-top: 18px;
@@ -152,6 +159,49 @@
         font-family: "JetBrains Mono", monospace;
         font-size: 0.95rem;
         line-height: 1.45;
+    }
+
+    /* Sponsor Section */
+    .sponsor {
+        position: relative;
+        margin: 80px auto;
+        max-width: 1000px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        height: 260px;
+        background: url("assets/forge_bg.png") center/cover no-repeat;
+        box-shadow: 0 0 22px rgba(0, 224, 255, 0.12);
+    }
+
+    .sponsor-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sponsor-overlay h2 {
+        color: #fff;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .sponsor-link {
+        color: var(--accent);
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+
+    .sponsor-link:hover {
+        opacity: 1;
     }
 
     /* TEAM SECTION */
@@ -207,16 +257,6 @@
         opacity: 0.6;
         font-size: 0.9rem;
     }
-
-    /* Subtle hover pop for feature + tech spec cards */
-.card.feature:hover,
-.card.spec:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 26px rgba(0, 224, 255, 0.18);
-    transition: all 0.2s ease;
-}
-
-    
 </style>
 </head>
 
@@ -321,6 +361,14 @@
             Charging up to 1A</p>
         </div>
 
+    </div>
+</section>
+
+<!-- ⭐ NEW SPONSOR SECTION -->
+<section class="sponsor">
+    <div class="sponsor-overlay">
+        <h2>Sponsored by Forge — Hack Club</h2>
+        <a class="sponsor-link" href="#" target="_blank">View Project →</a>
     </div>
 </section>
 
