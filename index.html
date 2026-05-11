@@ -161,7 +161,7 @@
         line-height: 1.45;
     }
 
-    /* ⭐ Sponsor Section (logo left, text right) */
+    /* ⭐ Sponsor Section (logo left, centered text, smooth outline) */
     .sponsor {
         position: relative;
         margin: 80px auto;
@@ -188,12 +188,18 @@
     }
 
     .sponsor-logo {
-        width: 140px;
-        opacity: 0.95;
+        width: 110px; /* smaller */
+        border-radius: 10px; /* smooth outline */
+        background: rgba(255, 255, 255, 0.08);
+        padding: 10px;
+        box-shadow: 0 0 12px rgba(0, 224, 255, 0.15);
     }
 
     .sponsor-right {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centers text vertically */
     }
 
     .sponsor-right h2 {
@@ -201,6 +207,7 @@
         font-size: 1.6rem;
         margin: 0 0 10px 0;
         font-weight: 600;
+        text-align: left;
     }
 
     .sponsor-link {
@@ -375,7 +382,7 @@
     </div>
 </section>
 
-<!-- ⭐ NEW SPONSOR SECTION (logo left) -->
+<!-- ⭐ NEW SPONSOR SECTION (logo left, centered text, smooth outline) -->
 <section class="sponsor">
     <div class="sponsor-overlay">
         <div class="sponsor-left">
