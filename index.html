@@ -317,12 +317,12 @@
 <section>
     <h2>Features</h2>
     <div class="grid">
-        <div class="card feature"><h3>Sensor Integration</h3><p>Built-in modules for RF, IR, RFID & NFC capturing and emulating</p></div>
+        <div class="card feature"><h3>Sensor Integration</h3><p>Built-in IR & Sub-gHz modules with WiFi & BLE capabilities</p></div>
         <div class="card feature"><h3>Open-source Code</h3><p>Customisable and easy to use firmware in a single file</p></div>
-        <div class="card feature"><h3>Compact Design</h3><p>Multi-layered PCBs & 3D printed case make it pocket-sized and compact</p></div>
-        <div class="card feature"><h3>HID Payloads</h3><p>Can emulate rubber ducky payloads and HID scripts on devices via bluetooth</p></div>
-        <div class="card feature"><h3>Storage</h3><p>Supports micro SD cards to store signal data, e.g. IR & RFID codes</p></div>
-        <div class="card feature"><h3>Custom UI</h3><p>Simple, clean interface on an LCD display for easy navigation</p></div>
+        <div class="card feature"><h3>Compact Design</h3><p>Optimized PCB & 3D printed case make it pocket-sized and compact</p></div>
+        <div class="card feature"><h3>HID Payloads</h3><p>Emulate rubber ducky payloads and HID scripts on devices via bluetooth</p></div>
+        <div class="card feature"><h3>Storage</h3><p>Supports micro SD cards for efficient file management</p></div>
+        <div class="card feature"><h3>Custom UI</h3><p>Simple, clean interface on an OLED display for easy navigation</p></div>
     </div>
 </section>
 
@@ -336,79 +336,86 @@
 
         <div class="card spec">
             <h3>MCU</h3>
-           <!--  <p>STM32WB55RG<br>
-            ARM Cortex‑M4 @ 64MHz<br>
-            ARM Cortex‑M0+ @ 32MHz<br>
-            Bluetooth LE 5.4 + 802.15.4<br>
-            1024KB Flash / 256KB SRAM</p>-->
+           <!--  <p>ESP32-S3 N16R8<br>
+            Dual‑core Xtensa LX7 @ 240 MHz<br>
+            16 MB Flash + 8 MB PSRAM<br>
+            Wi‑Fi 2.4 GHz + Bluetooth LE 5.0<br>
+            USB C‑OTG support</p>-->
         </div>
 
         <div class="card spec">
             <h3>Display</h3>
-         <!--    <p>1.4” Monochrome LCD<br>
+         <!--    <p>0.96‑inch SSD1306 OLED<br>
             128×64 Resolution<br>
-            ST7567 Controller<br>
-            SPI Interface</p>-->
+            White monochrome<br>
+            I²C interface</p>-->
         </div>
 
         <div class="card spec">
-            <h3>Battery</h3>
-         <!--    <p>2100mAh LiPo<br>
-            Up to 28 days runtime</p>-->
+             <h3>Power</h3>
+          <!--   <p>3.7 V LiPo battery<br>
+            TP4056 USB‑C LiPo charger<br>
+            DD0403MB 3.3 V LDO</p>-->
         </div>
 
+
         <div class="card spec">
-            <h3>Sub‑1GHz RF</h3>
-          <!--   <p>CC1101 Transceiver<br>
-            Bands: 315 / 433 / 868 / 915 MHz<br>
-            TX Power: −20 dBm</p>-->
+            <h3>Sub‑1 GHz RF</h3>
+          <!--   <p>CC1101 transceiver module<br>
+            SMA antenna - Type C3<br>
+            Supports 315 / 433 / 868 / 915 MHz bands</p>-->
         </div>
 
         <div class="card spec">
             <h3>Infrared</h3>
-           <!--  <p>RX: 950nm<br>
-            TX: 940nm @ 300mW<br>
-            Supports NEC, RCA, Samsung, RC5/6, SIRC</p>-->
+           <!--  <p>IR transmitter + receiver module<br>
+             (940 nm TX / 950 nm RX)<br>
+            Supports NEC, RC5/RC6, SIRC, Samsung, RCA</p>-->
         </div>
 
         <div class="card spec">
-            <h3>MicroSD card</h3>
-            <!-- <p>Read / Write / Emulate<br>
-            Supports DS199x, CYFRAL, Metakom, RW1990</p>-->
-        </div>
-
-        <div class="card spec">
-            <h3>RFID</h3>
-            <!-- <p>125kHz AM/OOK<br>
-            Supports EM410x, HID, AWID, FDX, Jablotron</p>-->
-        </div>
-
-        <div class="card spec">
-            <h3>NFC</h3>
-           <!--  <p>Read / Write / Emulate<br>
-            MIFARE, DESFire, FeliCa, iClass</p> -->
+            <h3>Storage</h3>
+            <!-- <p>SPI‑based microSD (TF) card reader<br>
+            Supports 16 GB microSDHC card</p>-->
         </div>
 
         <div class="card spec">
             <h3>USB</h3>
-           <!--  <p>USB‑C (12 Mbps)<br>
-            Charging up to 1A</p> -->
+                  <!--  <p>USB‑C via ESP32‑S3<br>
+             Supports USB‑OTG<br>
+            Charging handled by TP4056 module</p>-->
+        </div>
+      
+        <div class="card spec">
+            <h3>Nav Controls</h3>
+                  <!--  <p>5‑way navigation button<br>
+             3D‑printed 5‑way button cap<br>
+            6×6×5 mm tactile “back” button</p>-->
         </div>
 
+          
+        <div class="card spec">
+            <h3>Custom PCB</h3>
+                  <!--  <p>Integrates breakout modules<br>
+             Routed for mixed‑signal domains<br>
+            Designed for clean internal layout</p>-->
+        </div>
+
+      
     </div>
 </section>
 
-<!-- ⭐ NEW SPONSOR SECTION (logo left, centered text, smooth outline) -->
+
 <section class="sponsor">
     <div class="sponsor-overlay">
         <div class="sponsor-left">
-            <a href="https://forge.hackclub.com/" target="_blank">
+            <a href="https://forge.hackclub.com/projects/373" target="_blank">
                 <img src="assets/forge_logo.png" class="sponsor-logo" alt="Forge Logo">
             </a>
         </div>
         <div class="sponsor-right">
             <h2>Sponsored by Forge - Hack Club</h2>
-            <a class="sponsor-link" href="https://forge.hackclub.com/users/130" target="_blank">View Project →</a>
+            <a class="sponsor-link" href="https://forge.hackclub.com/projects/373" target="_blank">View Project →</a>
         </div>
     </div>
 </section>
