@@ -14,4 +14,4 @@
 |Custom PCB | Electronics | £ | $ | [JLCPCB](jlcpcb.com) | (+ shipping) |
 |3D Print Case Filament | Reimbursement | £ | $ | [HCB](hcb.hackclub.com) | Rounded to 250g? |
 |5D Button Case Print | 3D Print File | N/A | N/A | [Makerworld](https://makerworld.com/en/models/402441-5-way-button-cap-cover?from=search#profileId-304081) | Or make my own? |
-|**Total**| **All** | 
+|**Total**| **All** | £33.34 | $44.77 |
