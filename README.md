@@ -16,9 +16,10 @@ I designed and built this project during **Hackclub's Forge program** - [project
 - **Simple menu UI on a 0.96" OLED display**
 - **Can emulate Rubber Ducky payloads via bluetooth**
 - **Supports microSD for efficient file management**
-- **Rechargable LiPo battery system**
-- **ESP-NOW communication protocol**
+- **Rechargable 3.7V LiPo battery system (2000mAh)**
+- **ESP-NOW communication protocol & messaging**
 
+---
 
 
 
