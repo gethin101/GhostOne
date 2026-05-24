@@ -76,7 +76,7 @@ I designed and built this project during **Hackclub's Forge program** - [project
 - [ ] Production files (if applicable)  
 - [ ] JOURNAL.md (if journalling on Git)  
 
-- [x] Cover image, title, and description added on Forge  
+- [X] Cover image, title, and description added on Forge  
 - [ ] Repository linked to your Forge project  
 
 ## ❌ You should NOT have:
