@@ -11,7 +11,7 @@ I designed and built this project during **Hackclub's Forge program** - [project
 # Key Features
 - **Powered by an ESP32-S3 N16R8 microcontroller**
 - **Built in Infrared & Sub-GHz modules**
-- **WiFi 2.4 GHz and Bluetooth LE 5.0**
+- **WiFi 2.4 GHz and Bluetooth LE 5.0 capabilities**
 - **Custom PCB & 3D Printed Case**
 - **Simple menu UI on an OLED display**
 - **Can emulate Rubber Ducky payloads**
