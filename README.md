@@ -61,6 +61,97 @@ https://www.amazon.co.uk/diymore-ESP32-S3-DevKitC-1-Development-Connectable-ESP3
 |5D Button Case Print | 3D Print File | N/A | N/A | [Makerworld](https://makerworld.com/en/models/402441-5-way-button-cap-cover?from=search#profileId-304081) | Or make my own? |
 |**Total**| **All** | £36.64 | $49.20 | [BOM](https://github.com/gethin101/ghostone/blob/main/BOM.md) | Rest of funds used for upgrades |
 
+---
+
+# PCB Wiring
+
+# Full Wiring Table for ESP32 Handheld Project
+
+## Power System
+| Component Pin        | Net / Connection     | Notes |
+|----------------------|-----------------------|-------|
+| Battery +            | CH_+ (TP4056 B+)      | Raw battery input |
+| Battery –            | GND / CH_-            | Shared ground |
+| TP4056 CH_+          | Battery +             | Charger input |
+| TP4056 CH_-          | Battery – / GND       | Charger ground |
+| TP4056 OUT+ (Pin 3)  | CHG_OUT               | Charger output to switch |
+| TP4056 OUT–          | GND                   | Same ground net |
+| SW_SPDT Pin 1        | CHG_OUT               | From TP4056 OUT+ |
+| SW_SPDT Pin 2        | LDO VCC               | Power to LDO (middle pin) |
+| SW_SPDT Pin 3        | NC                    | Not used |
+| LDO VCC              | SW_SPDT Pin 2         | Input to regulator |
+| LDO GND              | GND                   | Regulator ground |
+| LDO VO               | +3V3                  | Regulated 3.3V output |
+| ESP32 3V3            | +3V3                  | Main board power |
+| ESP32 GND            | GND                   | Common ground |
+
+## SSD1306 Display (I2C)
+| Component Pin | ESP32 Pin / Net | Notes |
+|---------------|------------------|-------|
+| VCC           | +3V3             | Power |
+| GND           | GND              | Ground |
+| SDA           | GPIO8 (SDA)      | I2C data |
+| SCL           | GPIO9 (SCL)      | I2C clock |
+
+## IR Transmitter
+| Component Pin | ESP32 Pin / Net | Notes |
+|---------------|------------------|-------|
+| VCC / +3V3    | +3V3             | Power |
+| GND           | GND              | Ground |
+| DAT           | GPIO4 (IR_TX)    | IR LED drive |
+
+## IR Receiver
+| Component Pin | ESP32 Pin / Net | Notes |
+|---------------|------------------|-------|
+| VCC           | +3V3             | Power |
+| GND           | GND              | Ground |
+| OUT           | GPIO5 (IR_RX)    | IR receive signal |
+
+## MicroSD Card (SPI)
+| Component Pin | ESP32 Pin / Net | Notes |
+|---------------|------------------|-------|
+| VCC           | +3V3             | Power |
+| GND           | GND              | Ground |
+| MOSI          | GPIO35 (SPI_MOSI)| Shared SPI |
+| MISO          | GPIO37 (SPI_MISO)| Shared SPI |
+| SCK           | GPIO36 (SPI_SCK) | Shared SPI |
+| CS            | GPIO38 (SD_CS)   | SD chip select |
+
+## CC1101 Radio (SPI)
+| Component Pin | ESP32 Pin / Net | Notes |
+|---------------|------------------|-------|
+| VCC           | +3V3             | Power |
+| GND           | GND              | Ground |
+| MOSI          | SPI_MOSI         | Shared with SD |
+| MISO          | SPI_MISO         | Shared with SD |
+| SCK           | SPI_SCK          | Shared with SD |
+| CSN           | GPIO41 (CC_CSN)  | Radio chip select |
+| GDO0          | GPIO39 (CC_GDO0) | Interrupt pin |
+| GDO2          | GPIO40 (CC_GDO2) | Interrupt pin |
+
+## 5-Way Navigation Switch
+| Nav Pin | ESP32 Pin / Net | Notes |
+|---------|------------------|-------|
+| F       | GPIO10 (NAV_F)   | Up |
+| B       | GPIO11 (NAV_B)   | Down |
+| L       | GPIO12 (NAV_L)   | Left |
+| R       | GPIO13 (NAV_R)   | Right |
+| M       | GPIO14 (NAV_M)   | Middle press |
+| GND     | GND              | Common ground |
+
+## Misc
+| Component Pin | Net / Connection | Notes |
+|---------------|------------------|-------|
+| ESP32 RST     | NC               | No reset button used |
+| 5V_IN         | NC               | Not used |
+
+
+
+
+
+
+---
+
 # Forge Requirements
 
 - [ ] A short description of what your project is  
@@ -88,6 +179,7 @@ https://www.amazon.co.uk/diymore-ESP32-S3-DevKitC-1-Development-Connectable-ESP3
 - [ ] Missing firmware/software  
 
 > ⚠️ **Important:** Missing any required item will result in project rejection and resubmission sends you to the back of the queue.
+>
 
 
 Designed and built by [@gethin101](https://github.com/gethin101)
