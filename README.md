@@ -57,3 +57,35 @@ I designed and built this project during **Hackclub's Forge program** - [project
 |3D Print Case Filament | Reimbursement | £ | $ | [HCB](https://hcb.hackclub.com) | Rounded to 250g? |
 |5D Button Case Print | 3D Print File | N/A | N/A | [Makerworld](https://makerworld.com/en/models/402441-5-way-button-cap-cover?from=search#profileId-304081) | Or make my own? |
 |**Total**| **All** | £36.64 | $49.20 | [BOM](https://github.com/gethin101/ghostone/blob/main/BOM.md) | Rest of funds used for upgrades |
+
+# Forge Requirements
+
+- [ ] A short description of what your project is  
+- [ ] A couple of sentences on why you made the project  
+
+- [ ] Pictures of your finished project  
+- [ ] Screenshot of a full 3D model of your project  
+- [ ] Screenshot of your PCB (if applicable)  
+- [ ] Screenshot of your schematic (if applicable)  
+- [ ] Wiring diagram (if any wiring is not on a PCB)  
+
+- [ ] BOM in table format at the end of the README  
+- [ ] BOM.csv in the root directory with functioning links  
+
+- [ ] Source files for your project (hardware, firmware, CAD, etc.)  
+- [ ] Production files (if applicable)  
+- [ ] JOURNAL.md (if journalling on Git)  
+
+- [ ] Cover image, title, and description added on Forge  
+- [ ] Repository linked to your Forge project  
+
+## ❌ You should NOT have:
+- [ ] AI‑generated README or journal entries  
+- [ ] Stolen or uncredited work  
+- [ ] Missing firmware/software  
+
+> ⚠️ **Important:** Missing any required item will result in project rejection and resubmission sends you to the back of the queue.
+
+Designed and built by [@gethin101](https://github.com/gethin101)
+
+
