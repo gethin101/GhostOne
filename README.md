@@ -15,7 +15,7 @@ I designed and built this project during **Hackclub's Forge program** - [project
 - **Custom designed PCB & 3D Printed Case**
 - **Simple menu UI on a 0.96" OLED display**
 - **Can emulate Rubber Ducky payloads via bluetooth**
-- **Supports microSD storage for efficient file management**
+- **Supports microSD for efficient file management**
 - **Rechargable LiPo battery system**
 - **ESP-NOW communication protocol**
 
