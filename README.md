@@ -1,4 +1,4 @@
-# Ghost One
+# Ghost One 👻
 A custom flipper-inspired multi-tool device - built from scratch.
 
 I designed and built this project during **Hackclub's Forge program** - [project link](https://forge.hackclub.com/projects/373), to learn more about Embedded electronics, Radio frequency & Infrared communication & soldering and hardware assembly.
