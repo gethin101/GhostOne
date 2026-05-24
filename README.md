@@ -65,7 +65,6 @@ https://www.amazon.co.uk/diymore-ESP32-S3-DevKitC-1-Development-Connectable-ESP3
 
 # PCB Wiring
 
-# Full Wiring Table for ESP32 Handheld Project
 
 ## Power System
 | Component Pin        | Net / Connection     | Notes |
