@@ -23,6 +23,8 @@ I designed and built this project during **Hackclub's Forge program** - [project
 
 [<img width="859" height="242" alt="image" src="https://github.com/user-attachments/assets/3f53e825-7cd0-4578-a861-d0d30ef59b8a" />](https://forge.hackclub.com/projects/373)
 
+---
+
 
 
 
