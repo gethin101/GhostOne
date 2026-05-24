@@ -12,10 +12,10 @@ I designed and built this project during **Hackclub's Forge program** - [project
 - **Powered by an ESP32-S3 N16R8 microcontroller**
 - **Built in Infrared & Sub-GHz modules**
 - **WiFi 2.4 GHz and Bluetooth LE 5.0 capabilities**
-- **Custom PCB & 3D Printed Case**
-- **Simple menu UI on an OLED display**
-- **Can emulate Rubber Ducky payloads**
-- **Supports microSD storage**
+- **Custom designed PCB & 3D Printed Case**
+- **Simple menu UI on a 0.96" OLED display**
+- **Can emulate Rubber Ducky payloads via bluetooth**
+- **Supports microSD storage for efficient file management**
 - **Rechargable LiPo battery system**
 - **ESP-NOW communication protocol**
 
