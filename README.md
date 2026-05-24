@@ -29,6 +29,9 @@ I designed and built this project during **Hackclub's Forge program** - [project
 
 [<img width="859" height="242" alt="image" src="https://github.com/user-attachments/assets/3f53e825-7cd0-4578-a861-d0d30ef59b8a" />](https://forge.hackclub.com/projects/373)
 
+
+https://www.amazon.co.uk/diymore-ESP32-S3-DevKitC-1-Development-Connectable-ESP32-S3/dp/B0F3XMYYQY/ref=sr_1_2?adgrpid=1187474533648174&dib=eyJ2IjoiMSJ9.sT07sBvS757DScDXvQd2YGf07ZpvQkrKBN4PCIOgEchSr7cJrqk3BndHk3gdAj9DZuTNaS55H5PDL5WmX5YvKOIkQUavYyMezhonQl0XKq4wlY2Yq0vZAhRQAAOCl3Txo2gwDWTHiLptjhAy2iDylOG6v8g2MY_HES8P3CkAlii7msHHXcH-zxHgiFo0GSIM-OnKvkmIPuis5a8lw4oXrUj_U7WsO5LE9kV3W_aocBI.c6Ak2eg5uuRiD9uQW-RarqsSKVrXsgBnCHM8A2gUfN0&dib_tag=se&hvadid=74217373049060&hvbmt=be&hvdev=c&hvlocphy=246414&hvnetw=o&hvqmt=e&hvtargid=kwd-74217602348218%3Aloc-188&hydadcr=4399_2312469&keywords=esp32-s3%2Bdev%2Bboard&mcid=636985975dd1391eb3fa19af10458a9a&qid=1779633410&sr=8-2&th=1
+
 ---
 
 
